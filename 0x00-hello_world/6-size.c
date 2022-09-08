@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - print the size of various types
@@ -11,7 +11,6 @@ include <stdio.h>
 
 int main(void)
 {
-	{
 	printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
 	printf("Size of an int: %d byte(s)\n", (int) sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
