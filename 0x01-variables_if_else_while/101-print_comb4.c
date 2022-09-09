@@ -1,46 +1,40 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * main - print double digit combos
+ *
+ * Description: print double digit combos
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
-	int j;
+	int i, j;
 
 	i = 48;
-	j = 49;
-	while  ((i < 57) && (j < 58))
+	j = 48;
+
+	while (i < 58)
 	{
-		putchar(i);
-		putchar(j);
-		if ((i == 56) && (j == 57))
+		j = i + 1;
+		while (j < 58)
 		{
-			putchar('\n');
-			i++;
+			putchar(i);
+			putchar(j);
+
+			if (i < 56 || j < 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
 			j++;
 		}
-		else
-		{
-			putchar(44);
-			putchar(32);
-			if (j < 57)
-			{
-				j++;
-			}
-			else
-			{
-				i++;
-				j = 1 + i;
-			}
-		}
 
+		i++;
 	}
+
+	putchar(10);
 
 	return (0);
 }
