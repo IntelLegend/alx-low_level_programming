@@ -1,40 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - print double digit combos
- *
- * Description: print double digit combos
- *
- * Return: Always 0 (Success)
- */
-
+  * main - entry point of the program
+  *
+  * Takes no arguments
+  *
+  * Return: program always returns 0(success)
+  */
 int main(void)
 {
-	int i, j;
+	int num1, num2, num3;
 
-	i = 48;
-	j = 48;
-
-	while (i < 58)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		j = i + 1;
-		while (j < 58)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			putchar(i);
-			putchar(j);
-
-			if (i < 56 || j < 57)
+			for (num3 = num2 + 1; num3 < 10; num3++)
 			{
-				putchar(44);
-				putchar(32);
+				putchar((num1 % 10) + '0');
+				putchar((num2 % 10) + '0');
+				putchar((num3 % 10) + '0');
+
+			if (num1 == 7 && num2 == 8 && num3 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 			}
-			j++;
 		}
-
-		i++;
 	}
-
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
