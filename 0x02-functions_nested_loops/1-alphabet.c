@@ -9,11 +9,11 @@
 
 void print_alphabet(void)
 {
-	char a = 97;
+	char a = 'a';
 
 	while (a <= 122)
 	{
-		printf("%c", a);
+		_putchat("%c", a);
 		a++;
 	}
 	_putchar (10);
