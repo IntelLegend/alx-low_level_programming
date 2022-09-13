@@ -16,5 +16,5 @@ void print_alphabet(void)
 		printf("%c\n", a);
 		a++;
 	}
-	return (0);
+	_putchar (10);
 }
