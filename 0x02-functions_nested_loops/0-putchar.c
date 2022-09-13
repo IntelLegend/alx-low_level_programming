@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <main.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - The execution of my program begins here
