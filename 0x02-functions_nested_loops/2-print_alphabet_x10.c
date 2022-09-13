@@ -15,7 +15,7 @@ void print_alphabet(void)
 		while (a = 'a')
 		{
 			_putchar(a);
-			a++
+			a++;
 		}
 	}
 	_putchar(10);
