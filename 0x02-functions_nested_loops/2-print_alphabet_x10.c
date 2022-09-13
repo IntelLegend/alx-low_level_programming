@@ -10,7 +10,7 @@ void print_alphabet(void)
 {
 	int i;
 	char a = 'a';
-	for (i = 0; i < 10; 1++)
+	for (i = 0; i < 10; i++)
 	{
 		while (a = 'a')
 		{
