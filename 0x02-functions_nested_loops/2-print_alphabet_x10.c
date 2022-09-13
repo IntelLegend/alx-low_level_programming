@@ -2,21 +2,22 @@
 #include "main.h"
 
 /*
- *print_alphabet - substitute for main function
- *Return: what my code is expected to return
+ * print_alphabet_x10 - substitute for main function
+ * Return: what my code is expected to return
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	int i;
+	int i = 0;
 	char a = 'a';
-	for (i = 0; i < 10; i++)
+	
+	while (i < 10)
 	{
-		while (a = 'a')
+		for (a = 'a'; a <= 'z'; a++)
 		{
 			_putchar(a);
-			a++;
 		}
+		_putchar (10);
+		i++;
 	}
-	_putchar(10);
 }
