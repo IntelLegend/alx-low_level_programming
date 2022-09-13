@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - The execution of my program begins here
  * Return: Must return 0
