@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * main - program execution begins here
+ * print_alphabet - program execution begins here
  * Return:  the return value
  * Description: Program that displays a to z
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char a = 97;
 
@@ -16,4 +16,5 @@ int main(void)
 		printf("%c\n", a);
 		a++;
 	}
+	return (0);
 }
