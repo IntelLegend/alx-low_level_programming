@@ -13,7 +13,7 @@ void print_alphabet(void)
 
 	while (a <= 122)
 	{
-		putchar("%c", a);
+		puts("%c", a);
 		a++;
 	}
 	_putchar (10);
