@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
- * print_alphabet_x10 - substitute for main function
+/**
+ * print_alphabet_x10 - fuction that prints alphabets 10 times.
  * Return: what my code is expected to return
  */
 
