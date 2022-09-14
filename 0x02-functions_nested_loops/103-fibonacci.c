@@ -1,44 +1,28 @@
+
 #include <stdio.h>
 /**
-  * main - 98 fibonaccis
-  * Return: 0
-  */
+ * main - displays the fibonaccis
+ * Return: 0 on successful return
+ */
 int main(void)
 {
-	int count;
-	unsigned long i, j, k;
-	unsigned long m, n, p, carry;
-		count = 0;
-		i = 0;
-		j = 1;
-	for (count = 1; count <= 91; count++)
+	int sum = 0;
+	int a;
+	int b;
+	int second = 1;
+
+	a = 1;
+	b = 1;
+
+	while (b < 4000000)
 	{
-		k = i + j;
-		i = j;
-		j = k;
-		printf("%lu, ", k);
+		second = a + b;
+		a = b;
+		b = second;
+		if ((second <= 4000000) && (second % 2 == 0))
+			sum += second;
 	}
-	m = i % 1000;
-	i = i / 1000;
-	n = j % 1000;
-	j = j / 1000;
-	while (count <= 98)
-	{
-		carry = (m + n) / 1000;
-		p = (m + n) - carry * 1000;
-		k = (i + j) + carry;
-		m = n;
-		n = p;
-		i = j;
-		j = k;
-		if (p >= 100)
-			printf("%lu%lu", k, p);
-		else
-			printf("%lu0%lu", k, p);
-		if (count != 98)
-			printf(", ");
-		count++;
-	}
-	putchar('\n');
+	printf("%d\n", sum);
+
 	return (0);
 }
