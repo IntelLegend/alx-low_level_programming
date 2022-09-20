@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * swap-int - where my code begins
+ * swap_int - where my code begins
  *@a: value given
  *@b: Swapped value
  */
 
 void swap_int(int *a, int *b)
 {
-	int c;
+	int d
 
 	d = *a;
 	*a = *b;
