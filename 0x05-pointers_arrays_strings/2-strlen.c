@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_stren - code execution begins here
+ *_strlen - code execution begins here
  *@s: string
  *return: l
  */
