@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_strlen - code execution begins here
+ *_strlen - execute from here
  *@s: string
- *return: l
+ *Return: l
  */
 
 int _strlen(char *s)
