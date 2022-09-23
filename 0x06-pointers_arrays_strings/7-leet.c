@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * leet - function that encodes a string into 1337
@@ -13,7 +13,7 @@ char *leet(char *s)
 	for (l = 0; s[l] != '\0'; l++)
 	{
 		if (s[l] == 'a' || s[l] == 'A')
-			s[i] = '4';
+			s[l] = '4';
 		if (s[l] == 'e' || s[l] == 'E')
 			s[l] = '3';
 		if (s[l] == 'o' || s[l] == 'O')
