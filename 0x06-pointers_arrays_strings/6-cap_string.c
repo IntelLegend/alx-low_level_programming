@@ -18,7 +18,7 @@ char *cap_string(char *s)
 		while (i < len)
 		{
 			if ((y == 0 || s[y - 1] == strn[i]) && (s[y] >= 97 && s[y] <= 122))
-				s[y] = s[y] - 32
+				s[y] = s[y] - 32;
 			i++;
 		}
 		y++;
