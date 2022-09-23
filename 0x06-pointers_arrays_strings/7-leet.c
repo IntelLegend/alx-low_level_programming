@@ -8,21 +8,21 @@
 
 char *leet(char *s)
 {
-	int l;
+	int a = 0, b, l = 5;
+	char str[5] = {'A', 'E', 'O', 'T', 'L'};
+	char strc[5] = {'4', '3', '0', '7', '1'};
 
-	for (l = 0; s[l] != '\0'; l++)
+	while (s[a])
 	{
-		if (s[l] == 'a' || s[l] == 'A')
-			s[l] = '4';
-		if (s[l] == 'e' || s[l] == 'E')
-			s[l] = '3';
-		if (s[l] == 'o' || s[l] == 'O')
-			s[l] = '0';
-		if (s[l] == 't' || s[l] == 'T')
-			s[l] = '7';
-		if (s[l] == 'l' || s[l] == 'L')
-			s[l] = '1';
-	}
+		b = 0;
 
+		while (b < l)
+		{
+			if (s[a] == str[b] || s[a] - 32 == str[b])
+				s[a] = strc[b];
+			b++;
+		}
+		a++;
+	}
 	return (s);
 }
