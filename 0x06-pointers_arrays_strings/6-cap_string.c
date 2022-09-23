@@ -8,30 +8,20 @@
 
 char *cap_string(char *s)
 {
-	int high;
-	int low;
+	char strn[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int y = 0, i;
 
-	for (high = 0; s[high] != '\0'; high++)
+	while (s[y])
 	{
-		low = high - 1;
-		if (s[high] >= 'a' && s[high] <= 'z')
+		i = 0;
+		while (i < len)
 		{
-			if (high == 0)
-				s[high] = s[high] - 32;
-			else if (s[low] >= 9 && s[prev] <= 10)
-				s[high] = s[high] - 32;
-			else if (s[low] >= 32 && s[low] <= 34)
-				s[high] = s[high] - 32;
-			else if (s[low] >= 40 && s[low] <= 41)
-				s[high] = s[high] - 32;
-			else if (s[low] == 46)
-				s[high] = s[high] - 32;
-			else if (s[low] == 59)
-				s[high] = s[high] - 32;
-			else if (s[low] == 123 || s[low] == 125)
-				s[high] = s[high] - 32;
+			if ((y == 0 || s[y - 1] == strn[i]) && (s[y] >= 97 && s[y] <= 122))
+				s[y] = s[y] - 32
+			i++;
 		}
+		y++;
 	}
-
 	return (s);
 }
