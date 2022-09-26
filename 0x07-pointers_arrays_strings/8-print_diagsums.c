@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 			sum1 += *(a + i);
 			fmr = i;
 		}
-		else if (i == (prev + size + 1))
+		else if (i == (fmr + size + 1))
 		{
 			sum1 += *(a + i);
 			fmr = i;
