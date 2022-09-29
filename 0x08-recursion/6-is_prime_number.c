@@ -4,7 +4,7 @@
  * prime - prime number
  * @n: int
  * @y: int
- * Return: 1 for prime number
+ * Return: 1 for prime number, 0 if not
  */
 int prime(int n, int y)
 {
@@ -36,7 +36,7 @@ int is_prime_number(int n)
 	}
 	if (n == 1)
 	{
-		return (1);
+		return (0);
 	}
 	return (prime(n, 2));
 }
